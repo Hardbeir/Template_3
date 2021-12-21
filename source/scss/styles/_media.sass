@@ -8,6 +8,7 @@
 @media (max-width: 991px)
     html
         font-size: 55%
+        scroll-padding-top: 7rem
     .home,.box
         justify-content: center
         background-position: right !important
@@ -22,35 +23,38 @@
         font-size: 3rem
 
 @media (max-width: 768px)
-    #menu-btn
-        display: inline-block
-    .navbar
-        position: fixed
-        top: 0
-        left: -110%
-        background: $white
-        z-index:  10000
-        width: 35rem
-        height: 100%
-        display: flex
-        flex-flow: column
-        align-items: center
-        justify-content: center 
-    &.active
-        left: 0
-        box-shadow: 0 0 0 100vw  rgba(0,0,0,.8)
-    a 
-        margin: 1rem 0
-        font-size: 3rem
-    #nav-close
-        display: block
-        position: absolute
-        top: 1rem
-        right: 1.2rem
-    .swiper-button
-        &-next::after,&-prev::after
-           display: none
+    .header
+        #menu-btn
+            display: inline-block
+        .navbar
+            position: fixed
+            top: 0
+            left: -110%
+            background: $white
+            z-index:  10000
+            width: 35rem
+            height: 100%
+            display: flex
+            flex-flow: column
+            align-items: center
+            justify-content: center 
+        &.active
+            left: 0
+            box-shadow: 0 0 0 100vw  rgba(0,0,0,.8)
+        a 
+            margin: 1rem 0
+            font-size: 3rem
+        #nav-close
+            display: block
+            position: absolute
+            top: 1rem
+            right: 1.2rem
+        .swiper-button
+            &-next::after,&-prev::after
+            display: none
 
 @media (max-width: 450px)
     html
         font-size: 50%
+    .heading
+        font-size: 3rem
