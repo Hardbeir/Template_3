@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -51,6 +52,13 @@ section {
   color: #fff;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -100,14 +108,16 @@ section {
   display: none;
 }
 
-.header .icon a, .header .icon div {
+.header .icons a,
+.header .icons div {
   font-size: 2.5rem;
   margin-left: 2rem;
   cursor: pointer;
   color: #10221b;
 }
 
-.header .icon a:hover, .header .icon div:hover {
+.header .icons a:hover,
+.header .icons div:hover {
   color: #219150;
 }
 
@@ -251,47 +261,9 @@ section {
   padding: 1rem 0;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   font-size: 3rem;
-  color: #fff;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 250;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 4rem;
   color: #10221b;
 }
 
@@ -305,13 +277,12 @@ section {
 
 .category .box-container .box {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .category .box-container .box img {
   height: 20rem;
   width: 20rem;
-  background-color: #219150;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -322,14 +293,14 @@ section {
 }
 
 .category .box-container .box p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
 }
 
 .about {
-  background: #cecece;
+  background: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,8 +322,6 @@ section {
 
 .about .image img {
   width: 100%;
-  height: 25rem;
-  background: #10221b;
   -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
           box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -394,7 +363,6 @@ section {
 .shop .slide .image img {
   height: 100%;
   width: 100%;
-  background: #219150;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -447,7 +415,7 @@ section {
 }
 
 .packages {
-  background: #cecece;
+  background: #eee;
 }
 
 .packages .box-container {
@@ -484,10 +452,6 @@ section {
   color: #10221b;
 }
 
-.packages .box-container .box:hover .price {
-  color: #219150;
-}
-
 .packages .box-container .box .image {
   height: 25rem;
   overflow: hidden;
@@ -499,7 +463,6 @@ section {
 .packages .box-container .box .image img {
   height: 100%;
   width: 100%;
-  background: #219150;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: .5rem;
@@ -527,7 +490,7 @@ section {
 }
 
 .services {
-  background: #cecece;
+  background: #eee;
 }
 
 .services .box-container {
@@ -551,12 +514,8 @@ section {
 }
 
 .services .box-container .box:hover img {
-  -webkit-filter: invet(1);
-          filter: invet(1);
-}
-
-.services .box-container .box:hover h3 {
-  color: #fff;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .services .box-container .box:hover p {
@@ -570,6 +529,7 @@ section {
 
 .services .box-container .box:hover .btn:hover {
   background: #fff;
+  color: #10221b;
 }
 
 .services .box-container .box img {
@@ -593,7 +553,7 @@ section {
   padding: 2rem;
   font-size: 1.5rem;
   font-style: italic;
-  background: #cecece;
+  background: #eee;
   border-radius: .5rem;
   color: #10221b;
   line-height: 2;
@@ -609,7 +569,7 @@ section {
   left: .7rem;
   height: 3rem;
   width: 3rem;
-  background: #cecece;
+  background: #eee;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -627,7 +587,6 @@ section {
 .reviews .slide .user img {
   height: 7rem;
   width: 7rem;
-  background: #219150;
   border-radius: 50%;
 }
 
@@ -691,7 +650,7 @@ section {
 }
 
 .newsletter {
-  background: #cecece;
+  background: #eee;
 }
 
 .newsletter .content {
@@ -707,14 +666,14 @@ section {
 }
 
 .newsletter .content form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 2rem;
   background: #fff;
   border-radius: 5rem;
   border: 0.2rem solid #10221b;
   padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .newsletter .content form .email {
@@ -738,19 +697,17 @@ section {
   color: #10221b;
 }
 
-.clients .slide {
+.clients .silde {
   text-align: center;
 }
 
-.clients .slide img {
+.clients .silde img {
   height: 12rem;
-  width: 12rem;
-  background: #219150;
 }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), #cecece;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #cecece;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -810,9 +767,6 @@ section {
   section {
     padding: 3rem 2rem;
   }
-  .footer .box-container {
-    gap: 12.5rem;
-  }
 }
 
 @media (max-width: 991px) {
@@ -840,10 +794,7 @@ section {
     font-size: 3rem;
   }
   .home .box .content h3 {
-    font-size: 3rem;
-  }
-  .footer .box-container {
-    gap: 5.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -886,12 +837,12 @@ section {
     display: block;
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 1.2rem;
   }
-}
-
-.swiper-button-next::after, .swiper-button-prev::after {
-  display: none;
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
@@ -902,4 +853,4 @@ section {
     font-size: 3rem;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

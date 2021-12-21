@@ -2,26 +2,32 @@
     .header
         padding: 2rem
     section
-
         padding: 3rem 2rem
+    .footer
+        .box-container
+            gap: 12.5rem
 
 @media (max-width: 991px)
     html
         font-size: 55%
         scroll-padding-top: 7rem
-    .home,.box
-        justify-content: center
-        background-position: right !important
-        &.second
-           justify-content: center
-           background-position: left !important
-    .content
-        text-align: center
-    span
-        font-size: 3rem
-    h3
-        font-size: 3rem
-
+    .home
+        .box
+            padding: 2rem
+            justify-content: center
+            background-position: right !important
+            &.second
+                justify-content: center
+                background-position: left !important
+            .content
+                text-align: center
+                span
+                    font-size: 3rem
+                h3
+                    font-size: 3rem
+    .footer
+        .box-container
+            gap: 5.5rem
 @media (max-width: 768px)
     .header
         #menu-btn
@@ -38,20 +44,21 @@
             flex-flow: column
             align-items: center
             justify-content: center 
-        &.active
-            left: 0
-            box-shadow: 0 0 0 100vw  rgba(0,0,0,.8)
-        a 
-            margin: 1rem 0
-            font-size: 3rem
-        #nav-close
-            display: block
-            position: absolute
-            top: 1rem
-            right: 1.2rem
-        .swiper-button
-            &-next::after,&-prev::after
-            display: none
+            &.active
+                left: 0
+                box-shadow: 0 0 0 100vw  rgba(0,0,0,.8)
+            a 
+                margin: 1rem 0
+                font-size: 3rem
+            #nav-close
+                display: block
+                position: absolute
+                top: 1rem
+                right: 2rem
+.swiper-button
+    &-next::after, 
+    &-prev::after
+        display: none
 
 @media (max-width: 450px)
     html
